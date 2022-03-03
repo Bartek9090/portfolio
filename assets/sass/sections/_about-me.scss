@@ -1,0 +1,73 @@
+.about-me {
+    padding: 100px 0;
+    display: flex;
+  
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .me {
+            width: calc(100%/2);
+            padding: 0 15px;
+            @media(max-width:$medium_device) {
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 0 10px;
+            }
+        
+            @media(max-width:$small_device) {
+                width: 100%;
+                padding: 0 10px;
+
+            }
+       
+        }
+
+        img {
+            width: 100%;
+            
+
+            @media(max-width:$medium_device) {
+                margin-bottom: 30px;
+            }
+
+            @media(max-width:$small_device) {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .me {
+        text-align: center;
+
+        ul {
+            display: inline-block;
+
+            li {
+                @include resetList;
+
+                span {
+                    display: block;
+                    border: 2px solid $primary_color;
+                    border-radius: 5px;
+                    padding: 4px 10px;
+                }
+            }
+        }
+    }
+
+    .btn {
+        border: 2px solid $primary_color;
+        padding: 4px 10px;
+        border-radius: 5px;
+        background-color: $primary_color;
+    }
+
+    .btn:hover {
+        background-color: #0bceaeab;
+    }
+
+}

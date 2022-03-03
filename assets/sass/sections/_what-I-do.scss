@@ -1,0 +1,55 @@
+.what-i-do {
+    padding: 100px 0;
+
+    h2 {
+        @include fluid-type(320px, 1170px, 20px, 30px);
+        margin: 0 0 60px 0;
+        text-align: center;
+
+    }
+
+    .offerts {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .offert {
+            width: calc(100%/3);
+            padding: 0 15px;
+
+            @media(max-width:$medium_device) {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+
+            @media(max-width:$small_device) {
+                width: 100%;
+            }
+
+            .bg {
+                padding: 30px;
+                background-color: $offert_box_bg;
+                margin-bottom: 10px;
+                border-radius: 5px;
+
+                i {
+                    color: $primary_color;
+                    font-size: 30px;
+
+                }
+
+                h4 {
+                    @include fluid-type(320px, 1170px, 18px, 25px);
+                    margin: 20px 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin: 0;
+                    line-height: 1.6;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

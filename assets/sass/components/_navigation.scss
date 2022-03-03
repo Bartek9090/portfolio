@@ -1,0 +1,147 @@
+// <!-- ********** -->
+// <!-- Navigation -->
+// <!-- ********** -->
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+    background-color: $main_Background_Color;
+    @media(max-width:$medium_device) {
+        &.menu-opened {
+            background-color: $main_Background_Color;
+
+            .container {
+                .menu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    // Remember about space in calc
+                    height: calc(100% - 72px);
+                    width: 100%;
+                    top: 72px;
+                    left: 0;
+                    flex-direction: column;
+                    background-color: $main_Background_Color;
+                    li {
+                        margin: 0 0 15px 0;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+            @include resetList;
+            display: flex;
+
+            @media(max-width:$medium_device) {
+                display: none;
+            }
+
+            li {
+                margin-right: 40px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    font-size: 18px;
+                    font-weight: 700;
+                    transition: .3s;
+                    user-select: none;
+                }
+
+                &:hover {
+                    color: $primary_color
+                }
+
+
+
+            }
+        }
+    }
+}
+
+// < !-- ********  --> //     
+// < !--Hamburger  -->
+// <!-- ********** -->
+.hamburger {
+    position: relative;
+    height: 24px;
+    width: 40px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+
+    @media(max-width:$medium_device) {
+        display: block;
+    }
+
+    &.close {
+        span {
+            transform: rotate(45deg);
+            top: 10px;
+
+            &::before {
+                transform: rotate(-90deg);
+                top: 0
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+
+    span {
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+
+        &::before {
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            content: "";
+        }
+
+        &::after {
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            content: "";
+        }
+    }
+}

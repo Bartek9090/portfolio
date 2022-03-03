@@ -1,0 +1,29 @@
+//In this file there will be definitions like removing links etc.
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $mainFontFamily;
+    background-color: $main_Background_Color;
+    color: $main_text_color;
+}
+
+
+a {
+    text-decoration: none;
+    color: $main_text_color;
+}
+
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+   
+    
+}
+
+.purple {
+    color: $purple_color !important;
+}

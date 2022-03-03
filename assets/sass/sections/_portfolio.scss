@@ -1,0 +1,133 @@
+.portfolio {
+    padding: 100px 0;
+
+    h2 {
+        @include fluid-type(320px, 1170px, 20px, 30px);
+        margin: 0 0 60px 0;
+        text-align: center;
+
+    }
+
+    .portfolio-projects {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        justify-content: space-around;
+        align-items: center;
+
+        .project {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 1rem;
+            box-shadow: 0.3rem 0.3rem 0.5rem #777;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 10px 5px 5px black;
+
+            @media(max-width:$medium_device) {
+        
+                width: 44%;
+                margin-bottom: 30px;
+            }
+
+            @media(max-width:$small_device) {
+                width: 100%;
+            }
+
+            .bg {
+                background-color: $offert_box_bg;
+                border-radius: 5px;
+
+                
+              
+                                  
+                .img-portfolio{
+                    border-radius: 8px;
+                    width: 100%;
+                    text-align: center;
+                    transition: opacity 0.3s;
+                    padding: 3px 3px;
+                
+                }
+                
+                
+                
+                .project-text {
+                    text-align: center;
+                    letter-spacing: 0.1rem;
+                    position: absolute;
+                    visibility: hidden;
+                    z-index: 1;
+                    left: 23%;
+                    display: flex;
+                }
+               
+
+               
+                    
+                    h4 {
+                        @include fluid-type(320px, 1170px, 18px, 25px);
+                        // margin: 20px 0;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    p{
+                        @include fluid-type(320px, 1170px, 18px, 25px);
+                        text-align: center;
+                    }
+                    .gallery-font{
+                        font-size: 18px;
+                    }
+
+                    
+                 
+                }
+                img{ 
+                    width: 40rem;
+                    transition: opacity 0.3s;
+                  }
+                .project:hover img {
+                    opacity: 0.2;
+                  }  
+            }
+            .bg:hover {
+                visibility: visble;
+                background-color: #17171a;
+
+                .project-text{
+                    visibility: visible;
+                    text-align: center;
+                    justify-content: center;
+                    color: $main_text_color;
+                    flex-direction: column;
+
+
+                }
+                .img-portfolio{
+                    opacity: 0.03;
+                }
+
+                .underline {
+                    position: relative; 
+                }  
+               
+                .underline:after {
+                    position: absolute;
+                    content: '';
+                    height: 2px;
+                    bottom: -4px;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    width: 80%;
+                    background: $primary_color; 
+
+            }
+
+        }
+  
+    }
+}

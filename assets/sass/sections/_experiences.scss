@@ -1,0 +1,100 @@
+.experiences{
+    padding: 100px 0;
+    
+    
+    h2{
+        text-align: center;
+        font-size: 30px
+    }
+        h4 {
+            @include fluid-type(320px, 1170px, 20px, 30px);
+            margin: 0 0 60px 0;
+            // text align in display block set center in text
+            text-align: center;
+        }
+        .experience-done{
+            display: flex;
+
+            // brake point
+            @media(max-width:$small_device) {
+                width: 100%;
+                flex-direction: column;
+            }
+  
+            .title{
+                color: $main_text_color;
+            }
+
+        .experience{
+            padding:  25px;
+            width: auto;
+            
+              
+        
+        .bg{
+            padding: 10px 30px;
+            background-color: $offert_box_bg;
+            text-align: center;
+            width: 100;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: left;
+            text-align: justify;
+            box-shadow: 10px 5px 5px black;
+            
+            @media(max-width:$medium_device) {
+                width: 100%;
+                margin-bottom: 30px;
+                height: 100%;
+            }
+        
+            @media(max-width:$small_device) {
+                width: 100%;
+            }
+            
+            h5{
+                color: $main_text_color;
+                font-size: 18px;
+                line-height: 24px;
+                
+                a{
+                    color: $primary_color;
+                    .style-year{
+    
+                        color: $main_text_color;
+                    }
+                }
+      
+                               
+                }
+
+            p{
+                line-height: 1.4rem;
+                text-justify: inter-character;
+                
+                
+                @media(max-width:$small_device) {
+                font-size: 16px;
+                }
+            }
+            b{
+                letter-spacing: 0.5px;
+            }
+            
+            .style_responsibility{
+                color: $main_text_color;
+                justify-content: flex-start;
+                @include resetList;
+            li{
+                margin-bottom: 15px;
+            }                
+            }
+        }
+    }
+    
+
+    
+}
+
+
+}
