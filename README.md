@@ -10,10 +10,6 @@ base, admixtures and variables. The website is based on the layout found on the 
 * google fonts family Roboto 300, 400, 700, 
 * font awsome
 
-## Installing
-git clone https://github.com/Bartek9090/portfolio  <br/>
-To run this project, install it locally, and execute a program.
-
 ## Help
 If you have any problem with website please do not hesitate text to me.
 
