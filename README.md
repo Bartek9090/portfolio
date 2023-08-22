@@ -2,9 +2,28 @@
 -------------------------
 
 ## Description
-Responsive onepage portfolio site. It was created in HTML and styled in SASS.
-The website has a Hamburger menu and 7 sections (about_me, contact_me, experinces, introduction, portfolio, Technicals, What-I-do) styled on SASS,
-base, admixtures and variables. The website is based on the layout found on the Internet,  the code is author's.
+Responsive one page portfolio site. It was created in HTML and styled in SCSS.
+
+## About Project 
+The website contains 7 sections: about_me, contact_me, experinces, introduction, portfolio, technicals, what-I-do.
+The project was created to practice the SCSS preprocessor and related technologies and syntaxes. Moreover that was my first contact with Flexbox. 
+At this moment of my coding history 
+
+The website is based on the layout found on the Internet,  the code is mine.
+
+## Technologies:
+* HTML 5
+* CSS
+* JS
+* SCSS
+
+## Features:
+* Hamburger menu
+* fully responsive
+* animations in offert
+* contact form
+* progres bars
+
 
 ##Dependencies
 * google fonts family Roboto 300, 400, 700, 
