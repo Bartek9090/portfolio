@@ -35,6 +35,3 @@ If you have any problem with website please do not hesitate text to me.
 ## Authors
 Bartek9090
 
-## Version History
-
-Verion 1.0.0
