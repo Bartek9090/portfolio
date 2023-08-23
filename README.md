@@ -7,7 +7,6 @@ Responsive one page portfolio site. It was created in HTML and styled in SCSS.
 ## About Project 
 The website contains 7 sections: about_me, contact_me, experinces, introduction, portfolio, technicals, what-I-do.
 The project was created to practice the SCSS preprocessor and related technologies and syntaxes. Moreover that was my first contact with Flexbox. 
-At this moment of my coding history 
 
 The website is based on the layout found on the Internet,  the code is mine.
 
