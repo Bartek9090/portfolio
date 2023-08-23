@@ -52,10 +52,8 @@ html {
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /*
@@ -85,10 +83,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -119,10 +115,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -160,10 +154,8 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -179,14 +171,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -194,8 +182,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -203,9 +190,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -258,11 +245,9 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -277,10 +262,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -303,7 +286,6 @@ summary {
   z-index: 100;
   background-color: #100e17;
 }
-
 @media (max-width: 1000px) {
   .navigation.menu-opened {
     background-color: #100e17;
@@ -336,7 +318,6 @@ summary {
     margin: 0;
   }
 }
-
 .navigation .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,7 +329,6 @@ summary {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .navigation .container .menu {
   list-style-type: none;
   margin: 0;
@@ -357,32 +337,27 @@ summary {
   display: -ms-flexbox;
   display: flex;
 }
-
 @media (max-width: 1000px) {
   .navigation .container .menu {
     display: none;
   }
 }
-
 .navigation .container .menu li {
   margin-right: 40px;
 }
-
 .navigation .container .menu li:last-child {
   margin: 0;
 }
-
 .navigation .container .menu li a {
   font-size: 18px;
   font-weight: 700;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-
 .navigation .container .menu li:hover {
   color: #0bceaf;
 }
@@ -396,29 +371,24 @@ summary {
   cursor: pointer;
   display: none;
 }
-
 @media (max-width: 1000px) {
   .hamburger {
     display: block;
   }
 }
-
 .hamburger.close span {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 10px;
 }
-
 .hamburger.close span::before {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   top: 0;
 }
-
 .hamburger.close span::after {
   display: none;
 }
-
 .hamburger span {
   background-color: #fff;
   display: block;
@@ -429,7 +399,6 @@ summary {
   height: 4px;
   border-radius: 4px;
 }
-
 .hamburger span::before {
   background-color: #fff;
   display: block;
@@ -441,7 +410,6 @@ summary {
   border-radius: 4px;
   content: "";
 }
-
 .hamburger span::after {
   background-color: #fff;
   display: block;
@@ -457,41 +425,34 @@ summary {
 .footer {
   padding: 100px 0;
 }
-
 @media (max-width: 1000px) {
   .footer .footer-cointainer {
     width: 100%;
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 600px) {
   .footer .footer-cointainer {
     width: 100%;
   }
 }
-
 .footer .footer-cointainer h2 {
   margin: 0 0 60px 0;
   text-align: center;
 }
-
 .footer .footer-cointainer h2 {
   font-size: 20px;
 }
-
 @media screen and (min-width: 320px) {
   .footer .footer-cointainer h2 {
     font-size: calc(20px + 10 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .footer .footer-cointainer h2 {
     font-size: 30px;
   }
 }
-
 .footer .footer-cointainer .forms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,7 +460,6 @@ summary {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .footer .footer-cointainer .forms .contact-form {
   width: 100%;
   display: -webkit-box;
@@ -514,7 +474,6 @@ summary {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .footer .footer-cointainer .forms .contact-form input {
   background-color: #171718;
   cursor: pointer;
@@ -530,7 +489,6 @@ summary {
           flex-direction: column;
   border-radius: 5px;
 }
-
 @media (max-width: 1000px) {
   .footer .footer-cointainer .forms .contact-form input {
     width: 90%;
@@ -538,17 +496,14 @@ summary {
     min-height: 10px;
   }
 }
-
 @media (max-width: 600px) {
   .footer .footer-cointainer .forms .contact-form input {
     width: 90%;
   }
 }
-
 .footer .footer-cointainer .forms .contact-form input[type=text] {
   background-color: #171718;
 }
-
 .footer .footer-cointainer .forms .contact-form textarea {
   background-color: #171718;
   color: #fff;
@@ -557,7 +512,6 @@ summary {
   min-width: 70%;
   min-height: 200px;
 }
-
 @media (max-width: 1000px) {
   .footer .footer-cointainer .forms .contact-form textarea {
     width: 50%;
@@ -566,13 +520,11 @@ summary {
     min-height: 120px;
   }
 }
-
 @media (max-width: 600px) {
   .footer .footer-cointainer .forms .contact-form textarea {
     width: 90%;
   }
 }
-
 .footer .footer-cointainer .forms .contact-form input[type=submit] {
   background-color: #0bceaf;
   width: 10rem;
@@ -584,11 +536,9 @@ summary {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .footer .footer-cointainer .forms .contact-form input[type=submit]:hover {
   background-color: #0f7765;
 }
-
 .footer .copyright {
   position: absolute;
   right: 15px;
@@ -599,28 +549,23 @@ summary {
 .what-i-do {
   padding: 100px 0;
 }
-
 .what-i-do h2 {
   margin: 0 0 60px 0;
   text-align: center;
 }
-
 .what-i-do h2 {
   font-size: 20px;
 }
-
 @media screen and (min-width: 320px) {
   .what-i-do h2 {
     font-size: calc(20px + 10 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .what-i-do h2 {
     font-size: 30px;
   }
 }
-
 .what-i-do .offerts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,57 +574,47 @@ summary {
       flex-wrap: wrap;
   margin: 0 -15px;
 }
-
 .what-i-do .offerts .offert {
-  width: calc(100%/3);
+  width: 33.3333333333%;
   padding: 0 15px;
 }
-
 @media (max-width: 1000px) {
   .what-i-do .offerts .offert {
     width: 50%;
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 600px) {
   .what-i-do .offerts .offert {
     width: 100%;
   }
 }
-
 .what-i-do .offerts .offert .bg {
   padding: 30px;
   background-color: #202026;
   margin-bottom: 10px;
   border-radius: 5px;
 }
-
 .what-i-do .offerts .offert .bg i {
   color: #0bceaf;
   font-size: 30px;
 }
-
 .what-i-do .offerts .offert .bg h4 {
   margin: 20px 0;
 }
-
 .what-i-do .offerts .offert .bg h4 {
   font-size: 18px;
 }
-
 @media screen and (min-width: 320px) {
   .what-i-do .offerts .offert .bg h4 {
     font-size: calc(18px + 7 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .what-i-do .offerts .offert .bg h4 {
     font-size: 25px;
   }
 }
-
 .what-i-do .offerts .offert .bg p {
   font-size: 14px;
   margin: 0;
@@ -693,7 +628,6 @@ summary {
   display: -ms-flexbox;
   display: flex;
 }
-
 .about-me .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,12 +636,10 @@ summary {
       flex-wrap: wrap;
   margin: 0 -15px;
 }
-
 .about-me .about .me {
-  width: calc(100%/2);
+  width: 50%;
   padding: 0 15px;
 }
-
 @media (max-width: 1000px) {
   .about-me .about .me {
     width: 100%;
@@ -715,87 +647,72 @@ summary {
     padding: 0 10px;
   }
 }
-
 @media (max-width: 600px) {
   .about-me .about .me {
     width: 100%;
     padding: 0 10px;
   }
 }
-
 .about-me .about img {
   width: 100%;
 }
-
 @media (max-width: 1000px) {
   .about-me .about img {
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 600px) {
   .about-me .about img {
     width: 100%;
   }
 }
-
 .about-me .me {
   text-align: center;
 }
-
 .about-me .me ul {
   display: inline-block;
 }
-
 .about-me .me ul li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 .about-me .me ul li span {
   display: block;
   border: 2px solid #0bceaf;
   border-radius: 5px;
   padding: 4px 10px;
 }
-
 .about-me .btn {
   border: 2px solid #0bceaf;
   padding: 4px 10px;
   border-radius: 5px;
   background-color: #0bceaf;
 }
-
 .about-me .btn:hover {
-  background-color: #0bceaeab;
+  background-color: rgba(11, 206, 174, 0.6705882353);
 }
 
 .contact-me {
   padding: 100px 0;
 }
-
 .contact-me .container h2 {
   margin: 0 0 60px 0;
   text-align: center;
 }
-
 .contact-me .container h2 {
   font-size: 20px;
 }
-
 @media screen and (min-width: 320px) {
   .contact-me .container h2 {
     font-size: calc(20px + 10 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .contact-me .container h2 {
     font-size: 30px;
   }
 }
-
 .contact-me .container .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,25 +721,21 @@ summary {
       flex-wrap: wrap;
   margin: 0 -15px;
 }
-
 .contact-me .container .contacts .contact {
-  width: calc(100%/3);
+  width: 33.3333333333%;
   padding: 0 15px;
 }
-
 @media (max-width: 1000px) {
   .contact-me .container .contacts .contact {
     width: 50%;
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 600px) {
   .contact-me .container .contacts .contact {
     width: 100%;
   }
 }
-
 .contact-me .container .contacts .contact .bg {
   padding: 30px;
   background-color: #202026;
@@ -832,7 +745,6 @@ summary {
   margin-bottom: 10px;
   border-radius: 5px;
 }
-
 .contact-me .container .contacts .contact .bg i {
   width: 100px;
   height: 100px;
@@ -842,27 +754,22 @@ summary {
   border-radius: 50%;
   padding-top: 32px;
 }
-
 .contact-me .container .contacts .contact .bg h4 {
   margin: 20px 0;
 }
-
 .contact-me .container .contacts .contact .bg h4 {
   font-size: 18px;
 }
-
 @media screen and (min-width: 320px) {
   .contact-me .container .contacts .contact .bg h4 {
     font-size: calc(18px + 7 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .contact-me .container .contacts .contact .bg h4 {
     font-size: 25px;
   }
 }
-
 .contact-me .container .contacts .contact .bg p {
   font-size: 14px;
   margin: 0;
@@ -875,7 +782,6 @@ summary {
   display: -ms-flexbox;
   display: flex;
 }
-
 .introduction .introduction-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -884,18 +790,15 @@ summary {
       flex-wrap: wrap;
   margin: 0 -15px;
 }
-
 @media (max-width: 1000px) {
   .introduction .introduction-2 {
     margin: 0;
   }
 }
-
 .introduction .introduction-2 .hello {
-  width: calc(100%/2);
+  width: 50%;
   letter-spacing: 1px;
 }
-
 @media (max-width: 1000px) {
   .introduction .introduction-2 .hello {
     display: -webkit-box;
@@ -915,13 +818,11 @@ summary {
     letter-spacing: 0.5px;
   }
 }
-
 @media (max-width: 600px) {
   .introduction .introduction-2 .hello {
     width: 100%;
   }
 }
-
 .introduction .introduction-2 .hello span {
   font-size: 18px;
   display: block;
@@ -936,7 +837,6 @@ summary {
   font-weight: bold;
   padding: 10px 40px;
 }
-
 .introduction .introduction-2 .hello h1 {
   font-size: 60px;
   font-weight: 600;
@@ -949,18 +849,15 @@ summary {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-
 .introduction .introduction-2 .hello h2 {
   text-align: left;
 }
-
 .introduction .introduction-2 .hello .info {
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
-
 .introduction .introduction-2 .hello .info li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -969,11 +866,9 @@ summary {
   margin-right: 15px;
   padding: 10px 0;
 }
-
 .introduction .introduction-2 .hello .info li a {
   padding: 0px 10px;
 }
-
 .introduction .introduction-2 .hello .icons {
   list-style-type: none;
   margin: 0;
@@ -992,7 +887,6 @@ summary {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-
 .introduction .introduction-2 .hello .icons li {
   display: inline-block;
   text-align: left;
@@ -1006,11 +900,9 @@ summary {
   margin-left: 20px;
   width: 1.85rem;
 }
-
 .introduction .introduction-2 .hello .icons li .fab:hover {
   color: #0bceaf;
 }
-
 .introduction .introduction-2 img {
   width: 100%;
   background-color: #100d1b;
@@ -1020,7 +912,6 @@ summary {
   position: relative;
   right: -11rem;
 }
-
 @media (max-width: 1000px) {
   .introduction .introduction-2 img {
     margin-bottom: 30px;
@@ -1030,7 +921,6 @@ summary {
     margin: 25px 0;
   }
 }
-
 @media (max-width: 600px) {
   .introduction .introduction-2 img {
     width: 100%;
@@ -1040,39 +930,32 @@ summary {
 .experiences {
   padding: 100px 0;
 }
-
 .experiences h2 {
   text-align: center;
   font-size: 30px;
 }
-
 .experiences h4 {
   margin: 0 0 60px 0;
   text-align: center;
 }
-
 .experiences h4 {
   font-size: 20px;
 }
-
 @media screen and (min-width: 320px) {
   .experiences h4 {
     font-size: calc(20px + 10 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .experiences h4 {
     font-size: 30px;
   }
 }
-
 .experiences .experience-done {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 @media (max-width: 600px) {
   .experiences .experience-done {
     width: 100%;
@@ -1082,16 +965,13 @@ summary {
             flex-direction: column;
   }
 }
-
 .experiences .experience-done .title {
   color: #fff;
 }
-
 .experiences .experience-done .experience {
   padding: 25px;
   width: auto;
 }
-
 .experiences .experience-done .experience .bg {
   padding: 10px 30px;
   background-color: #202026;
@@ -1104,7 +984,6 @@ summary {
   -webkit-box-shadow: 10px 5px 5px black;
           box-shadow: 10px 5px 5px black;
 }
-
 @media (max-width: 1000px) {
   .experiences .experience-done .experience .bg {
     width: 100%;
@@ -1112,42 +991,34 @@ summary {
     height: 100%;
   }
 }
-
 @media (max-width: 600px) {
   .experiences .experience-done .experience .bg {
     width: 100%;
   }
 }
-
 .experiences .experience-done .experience .bg h5 {
   color: #fff;
   font-size: 18px;
   line-height: 24px;
 }
-
 .experiences .experience-done .experience .bg h5 a {
   color: #0bceaf;
 }
-
 .experiences .experience-done .experience .bg h5 a .style-year {
   color: #fff;
 }
-
 .experiences .experience-done .experience .bg p {
   line-height: 1.4rem;
   text-justify: inter-character;
 }
-
 @media (max-width: 600px) {
   .experiences .experience-done .experience .bg p {
     font-size: 16px;
   }
 }
-
 .experiences .experience-done .experience .bg b {
   letter-spacing: 0.5px;
 }
-
 .experiences .experience-done .experience .bg .style_responsibility {
   color: #fff;
   -webkit-box-pack: start;
@@ -1157,7 +1028,6 @@ summary {
   margin: 0;
   padding: 0;
 }
-
 .experiences .experience-done .experience .bg .style_responsibility li {
   margin-bottom: 15px;
 }
@@ -1170,7 +1040,6 @@ summary {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 @media (max-width: 1000px) {
   .technicals .container .technical-done {
     -webkit-box-orient: vertical;
@@ -1185,17 +1054,14 @@ summary {
             align-items: center;
   }
 }
-
 @media (max-width: 600px) {
   .technicals .container .technical-done {
     width: 100%;
   }
 }
-
 .technicals .container .technical-done .tech {
   width: 50%;
 }
-
 .technicals .container .technical-done .tech .title-tech {
   color: #fff;
   margin-top: 1rem;
@@ -1204,11 +1070,10 @@ summary {
   font-size: 29px;
   letter-spacing: 2px;
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar {
   width: 90%;
   height: 0.5rem;
-  background-color: #615e5e;
+  background-color: rgb(97, 94, 94);
   margin: 4rem 0;
   border-radius: 0.3rem;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #555;
@@ -1217,7 +1082,6 @@ summary {
   position: relative;
   left: 25px;
 }
-
 @media (max-width: 1000px) {
   .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar {
     width: 140%;
@@ -1225,13 +1089,11 @@ summary {
     left: -65px;
   }
 }
-
 @media (max-width: 600px) {
   .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar {
     width: 150%;
   }
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .progress {
   display: block;
   height: 100%;
@@ -1241,58 +1103,47 @@ summary {
   -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
           box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .HTML {
   width: 50%;
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .CSS {
   width: 50%;
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .SASS {
   width: 32%;
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .JS {
   width: 20%;
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .python {
   width: 50%;
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .progress-text {
   position: absolute;
   top: -29px;
   left: 4px;
   font-size: 23px;
 }
-
 .technicals .container .technical-done .tech .progress-bar-wraper .progress-bar .progress-percent {
   position: absolute;
   top: -29px;
   right: 4px;
   font-size: 23px;
 }
-
 .technicals .container .technical-done .professional {
   color: #fff;
   width: 50%;
 }
-
 @media (max-width: 1000px) {
   .technicals .container .technical-done .professional {
     width: 45%;
   }
 }
-
 @media (max-width: 600px) {
   .technicals .container .technical-done .professional {
     width: 100%;
   }
 }
-
 .technicals .container .technical-done .professional .title-prof {
   color: #fff;
   text-align: center;
@@ -1300,7 +1151,6 @@ summary {
   letter-spacing: 2px;
   margin-top: 1rem;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1314,7 +1164,6 @@ summary {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 @media (max-width: 1000px) {
   .technicals .container .technical-done .professional .radius-wrapper {
     width: 200%;
@@ -1322,7 +1171,6 @@ summary {
     left: -50%;
   }
 }
-
 @media (max-width: 600px) {
   .technicals .container .technical-done .professional .radius-wrapper {
     width: 100%;
@@ -1330,7 +1178,6 @@ summary {
     left: 0%;
   }
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius {
   position: relative;
   display: -webkit-box;
@@ -1350,20 +1197,17 @@ summary {
   height: 200px;
   top: -40px;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box {
   position: relative;
   width: 150px;
   height: 150px;
   margin-top: 60px;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-1 {
   width: 200px;
   height: 200px;
@@ -1378,17 +1222,14 @@ summary {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-1:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #444343;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-1:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 *52)/100);
+  stroke-dashoffset: 211.2;
   stroke: #0bceaf;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-2 {
   width: 200px;
   height: 200px;
@@ -1403,17 +1244,14 @@ summary {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-2:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #444343;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-2:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 *67/100));
+  stroke-dashoffset: 145.2;
   stroke: #0bceaf;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-3 {
   width: 200px;
   height: 200px;
@@ -1428,17 +1266,14 @@ summary {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-3:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #444343;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-3:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 *60/100));
+  stroke-dashoffset: 176;
   stroke: #0bceaf;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-4 {
   width: 200px;
   height: 200px;
@@ -1453,17 +1288,14 @@ summary {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-4:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #444343;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box svg .circle-4:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 *75/100));
+  stroke-dashoffset: 110;
   stroke: #0bceaf;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box .number {
   position: absolute;
   top: 0;
@@ -1479,15 +1311,12 @@ summary {
           align-items: center;
   color: #fff;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box .number h2 {
   font-size: 48px;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .progress-radius .circle_box .number h2 span {
   font-size: 24px;
 }
-
 .technicals .container .technical-done .professional .radius-wrapper .text-radius {
   color: #fff;
   font-weight: 500;
@@ -1498,28 +1327,23 @@ summary {
 .portfolio {
   padding: 100px 0;
 }
-
 .portfolio h2 {
   margin: 0 0 60px 0;
   text-align: center;
 }
-
 .portfolio h2 {
   font-size: 20px;
 }
-
 @media screen and (min-width: 320px) {
   .portfolio h2 {
     font-size: calc(20px + 10 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .portfolio h2 {
     font-size: 30px;
   }
 }
-
 .portfolio .portfolio-projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1533,7 +1357,6 @@ summary {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .portfolio .portfolio-projects .project {
   width: 350px;
   display: -webkit-box;
@@ -1556,25 +1379,21 @@ summary {
   -webkit-box-shadow: 10px 5px 5px black;
           box-shadow: 10px 5px 5px black;
 }
-
 @media (max-width: 1000px) {
   .portfolio .portfolio-projects .project {
     width: 44%;
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 600px) {
   .portfolio .portfolio-projects .project {
     width: 100%;
   }
 }
-
 .portfolio .portfolio-projects .project .bg {
   background-color: #202026;
   border-radius: 5px;
 }
-
 .portfolio .portfolio-projects .project .bg .img-portfolio {
   border-radius: 8px;
   width: 100%;
@@ -1583,7 +1402,6 @@ summary {
   transition: opacity 0.3s;
   padding: 3px 3px;
 }
-
 .portfolio .portfolio-projects .project .bg .project-text {
   text-align: center;
   letter-spacing: 0.1rem;
@@ -1595,69 +1413,56 @@ summary {
   display: -ms-flexbox;
   display: flex;
 }
-
 .portfolio .portfolio-projects .project .bg h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
 }
-
 .portfolio .portfolio-projects .project .bg h4 {
   font-size: 18px;
 }
-
 @media screen and (min-width: 320px) {
   .portfolio .portfolio-projects .project .bg h4 {
     font-size: calc(18px + 7 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .portfolio .portfolio-projects .project .bg h4 {
     font-size: 25px;
   }
 }
-
 .portfolio .portfolio-projects .project .bg p {
   text-align: center;
 }
-
 .portfolio .portfolio-projects .project .bg p {
   font-size: 18px;
 }
-
 @media screen and (min-width: 320px) {
   .portfolio .portfolio-projects .project .bg p {
     font-size: calc(18px + 7 * ((100vw - 320px) / 850));
   }
 }
-
 @media screen and (min-width: 1170px) {
   .portfolio .portfolio-projects .project .bg p {
     font-size: 25px;
   }
 }
-
 .portfolio .portfolio-projects .project .bg .gallery-font {
   font-size: 18px;
 }
-
 .portfolio .portfolio-projects .project img {
   width: 40rem;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-
 .portfolio .portfolio-projects .project .project:hover img {
   opacity: 0.2;
 }
-
 .portfolio .portfolio-projects .bg:hover {
   visibility: visble;
   background-color: #17171a;
 }
-
 .portfolio .portfolio-projects .bg:hover .project-text {
   visibility: visible;
   text-align: center;
@@ -1670,18 +1475,15 @@ summary {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .portfolio .portfolio-projects .bg:hover .img-portfolio {
   opacity: 0.03;
 }
-
 .portfolio .portfolio-projects .bg:hover .underline {
   position: relative;
 }
-
 .portfolio .portfolio-projects .bg:hover .underline:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   bottom: -4px;
   margin: 0 auto;
